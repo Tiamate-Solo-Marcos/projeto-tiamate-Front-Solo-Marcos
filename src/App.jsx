@@ -1,17 +1,6 @@
-import { QueryClientProvider } from "@tanstack/react-query";
-import Paths from "./routes/Paths";
-import { queryClient } from "./services";
-import 'boxicons'
+import { RouterProvider } from 'react-router-dom'
+import router from './routes/Router'
 
-
-const App = () => {
-  return (
-    <>
-      <QueryClientProvider client={queryClient}>
-        <Paths />
-      </QueryClientProvider>
-    </>
-  );
+export default function App() {
+  return <RouterProvider router={router}/>
 }
-
-export default App;

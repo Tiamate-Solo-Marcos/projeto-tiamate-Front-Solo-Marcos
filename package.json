@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "api": "npx json-server ./src/api/api.json --watch --port 4000"
+    "api": "npx json-server ./src/api/db.json --watch --port 4000"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",
@@ -18,10 +18,11 @@
     "axios": "^1.9.0",
     "boxicons": "^2.1.4",
     "json-server": "^0.17.4",
+    "lucide-react": "^0.511.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-hook-form": "^7.55.0",
-    "react-router": "^7.4.1",
+    "react-router-dom": "^7.6.1",
     "tailwindcss": "^4.1.5"
   },
   "devDependencies": {
